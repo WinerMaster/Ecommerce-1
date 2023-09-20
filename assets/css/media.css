@@ -1,0 +1,288 @@
+/****** <MEDIA VARIABLES CSS> *******/
+
+@media screen and (min-width: 800px) {
+    :root {
+        --size-icon       : 2.200rem;
+        --size-title-h1   : 3.7rem;
+        --size-title-h2   : 2.3rem;
+        --size-title-h3   : 1.4rem;
+        --size-text-normal: 0.9rem;
+        --size-text-sub   : 0.9rem;
+        --size-text-min   : 0.7rem;
+        --mn-section      : 4rem;
+        --mn-6-88         : 7.188rem;
+        --mn-11-25        : 1.25rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    :root {
+        --size-icon       : 2.563rem;
+        --size-title-h1   : 5.6rem;
+        --size-title-h2   : 3.5rem;
+        --size-title-h3   : 1.4rem;
+        --size-text-normal: 1rem;
+        --size-text-sub   : 0.9rem;
+        --size-text-min   : 0.7rem;
+        --mn-section      : 5rem;
+        --mn-6-88         : 6.188rem;
+        --mn-11-25        : 7.25rem;
+    }
+}
+
+
+
+
+/****** <MEDIA 1200 PX CSS> *******/
+
+@media screen and (max-width: 1200px) {
+    .body__image {
+        width: 24rem;
+        top  : 0rem;
+        left : -9rem;
+    }
+}
+
+
+
+/****** <MEDIA 900 PX CSS> *******/
+
+@media screen and (max-width: 900px) {
+
+    .body__image {
+        width: 20rem;
+        top  : 2rem;
+        left : -7rem;
+    }
+
+    main .section__item-initial.--info {
+        -ms-grid-columns: 0.6fr 1fr;
+        grid-template-columns: 0.6fr 1fr;
+    }
+
+    main .section__item-initial.--info .image-item-info {
+        left    : -7rem;
+        position: absolute;
+    }
+
+    .section__container-info {
+        padding-right: 0;
+    }
+
+}
+
+
+
+/****** <MEDIA 800 PX CSS> *******/
+
+
+@media screen and (max-width: 800px) {
+
+    section.section__item-initial.--footer {
+        -webkit-flex-flow:  wrap;
+            -ms-flex-flow:  wrap;
+                flex-flow:  wrap;
+    }
+    section.section__item-initial.--footer ul {
+        margin-top: 2rem;
+        max-width: 120px;
+        width: 100%;
+    }
+    section.section__item-initial.--footer.e-f ul {
+        max-width: 200px;
+        width: 100%;
+    }
+    .section__container-elements-social>* {
+        margin-right: 7rem;
+    }
+
+    .section__container-elements-social>*:nth-child(4) {
+        margin-right: 0;
+    }
+
+    .footer-email {
+        max-width: 260px;
+    }
+    .footer__icon {
+        width:100%;
+        height: 2rem;
+    }
+
+    ul.content__slider-products {
+        -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .body__data-description p {
+        padding-right: 12rem;
+        position     : relative;
+    }
+
+    .container__content-subtitle-info p {
+        padding-right: 5.7rem;
+    }
+
+    .section__container-info {
+        padding-right: 1rem;
+    }
+
+    main .section__item-initial.--info {
+        -ms-grid-columns: 0 1fr;
+        grid-template-columns: 0 1fr;
+    }
+
+    main .section__item-initial.--info .image-item-info {
+        top: 3rem;
+        left: 28rem;
+        width: 27rem;
+        position: absolute;
+    }
+
+    .section__container-items-initial{
+        -ms-grid-columns: 0fr 1fr;
+        grid-template-columns: 0fr 1fr;
+    }
+
+    .header .navbar__container .buttom__item-nav {
+        display: block;
+    }
+
+    .header .navbar__container .nav__list-pages .content-list-pages {
+        -ms-flex-align        : center;
+        -ms-flex-direction    : column;
+        -moz-box-align        : center;
+        -webkit-box-align     : center;
+        -webkit-box-orient    : vertical;
+        -webkit-align-items   : center;
+        -webkit-flex-direction: column;
+        flex-direction        : column;
+        align-items           : center;
+    }
+
+    .body__image {
+        top  : -1rem;
+        left : 30rem;
+        width: 23rem;
+    }
+
+    .header .navbar__container .nav__list-pages {
+        position          : fixed;
+        top               : -100%;
+        left              : 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        background        : var(--body-color);
+        width: 100vw;
+        padding           : 5rem 0 3rem;
+        -webkit-box-shadow: 0 0 20px var(--body-color);
+        box-shadow        : 0 0 20px var(--body-color);
+        -webkit-transition: 0.8s;
+        -o-transition     : 0.8s;
+        transition        : 0.8s;
+    }
+
+    .content-list-pages {
+        row-gap: 2rem;
+    }
+
+    .nav__x {
+        width  : var(--size-icon);
+        height : var(--size-icon);
+        fill   : var(--color-white);
+        cursor : pointer;
+        display: initial;
+    }
+
+    ul.content-list-pages li {
+        margin-left: 0rem;
+      }
+}
+
+
+
+
+@media screen and (max-width: 650px) {
+    .body__image {
+        top  : -1rem;
+        left : 22rem;
+        width: 23rem;
+    }
+
+    .container__content-subtitle-info p {
+        padding-right: 2.8rem;
+    }
+
+    main .section__item-initial.--info .image-item-info {
+        left: 21rem;
+    }
+
+    .body__data-description p {
+        padding-right: 7rem;
+    }
+
+    .section__container-elements-social>* {
+        margin-right: 3rem;
+    }
+
+    .section__container-elements-social>*:nth-child(4) {
+        margin-right: 0rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .body__section-data {
+        padding-left: 0;
+    }
+
+    .body__image {
+        left: 13rem;
+    }
+    .section__item-initial.--info.e-i {
+        padding-left         : 2rem;
+        -ms-grid-columns: none;
+        grid-template-columns: none;
+    }
+
+    .container__content-subtitle-info p {
+        padding-right: 0rem;
+    }
+
+    .body__data-description p {
+        padding-right: 0rem;
+    }
+
+    .section__container-info {
+        padding-right: 0;
+    }
+
+    ul.content__slider-products {
+        -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section__container-elements-social>* {
+        margin-right: 1.7rem;
+    }
+
+    .section__container-elements-social>*:nth-child(4) {
+        margin-right: 0;
+    }
+
+    .section__container-elements-social {
+        -webkit-flex-flow: wrap;
+            -ms-flex-flow: wrap;
+                flex-flow: wrap;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    main .section__item-initial.--info .image-item-info {
+        left: 14rem;
+    }
+}
